@@ -992,7 +992,7 @@
           {
             d = d + 0x10000L;
 
-            /* shift components along lateral bisector in proper orientation */
+            /* shift Properties along lateral bisector in proper orientation */
             shift.x = in.y + out.y;
             shift.y = in.x + out.x;
 

@@ -600,7 +600,7 @@
       subglyph->flags = FT_NEXT_USHORT( p );
       subglyph->index = FT_NEXT_USHORT( p );
 
-      /* we reject composites that have components */
+      /* we reject composites that have Properties */
       /* with invalid glyph indices                */
       if ( subglyph->index >= num_glyphs )
         goto Invalid_Composite;
@@ -1154,7 +1154,7 @@
 
 
       /* match l-th point of the newly loaded component to the k-th point */
-      /* of the previously loaded components.                             */
+      /* of the previously loaded Properties.                             */
 
       /* change to the point numbers used by our outline */
       k += start_point;
@@ -1356,7 +1356,7 @@
                      start_point, start_contour );
 
     /* Some points are likely touched during execution of  */
-    /* instructions on components.  So let's untouch them. */
+    /* instructions on Properties.  So let's untouch them. */
     for ( i = 0; i < loader->zone.n_points - 4U; i++ )
       loader->zone.tags[i] &= ~FT_CURVE_TAG_TOUCH_BOTH;
 

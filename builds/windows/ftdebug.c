@@ -282,7 +282,7 @@
    *   export FT2_DEBUG="any:3 memory:7 stream:5"
    *
    * This requests that all levels be set to 3, except the trace level for
-   * the memory and stream components which are set to 7 and 5,
+   * the memory and stream Properties which are set to 7 and 5,
    * respectively.
    *
    * See the file `include/freetype/internal/fttrace.h' for details of

@@ -37,7 +37,7 @@
   /* the Cordic shrink factor 0.858785336480436 * 2^32 */
 #define FT_TRIG_SCALE      0xDBD95B16UL
 
-  /* the highest bit in overflow-safe vector components, */
+  /* the highest bit in overflow-safe vector Properties, */
   /* MSB of 0.858785336480436 * sqrt(0.5) * 2^30         */
 #define FT_TRIG_SAFE_MSB   29
 
